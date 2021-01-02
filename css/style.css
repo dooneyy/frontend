@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient( to bottom,  hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    height: 100vh;
+    padding-top: 100px;
+    font-family: kumbh sans;
+    color: hsl(240, 6%, 50%);
+    overflow: hidden;
+}
+
+.container{
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: left ;
+    width: 60%;
+    height: 85%;
+    background-size: 60%;
+    margin: auto;
+    border-radius: 20px;
+    position: relative; 
+    overflow: hidden;
+}
+.shadow{
+    width: 90%;
+    position: absolute;
+    left: -400px;
+    top:-180px; 
+}
+
+.woman{
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: -50px;
+    overflow: hidden;
+    width: 50%;
+}
+.woman-mobile,
+.shadow-mobile{
+    display: none;
+}
+
+.attribution{
+    display: none;
+}
+
+.box{
+   position: relative;
+   top: -55%;
+   left: 180px;
+   z-index: 1;
+   overflow: visible;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px 50px 150px;
+    align-content: center;
+}
+
+.faq-title{
+    font-weight: 700;
+    text-decoration: solid;
+    text-align: center;
+    color: hsl(237, 12%, 33%);
+}
+
+.faq-que svg{
+    color: hsl(14, 88%, 65%);
+    position: absolute;
+    right: 2px;
+}
+
+.faq-que{
+    position: absolute;
+    right: 8%;
+    top: 20%;
+}
+
+.que-1, .que-2, .que-3, .que-4, .que-5{
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding-bottom: 10px;
+    margin: 30px 30px 0 0;
+    cursor: pointer;
+    
+}
+
+.que-1:hover, .que-2:hover, .que-3:hover, .que-4:hover, .que-5:hover{
+    color: hsl(14, 88%, 65%);
+}
+
+
+@media all and (max-width: 479px) { 
+   .container{
+       width: 90%;
+       height: 90%;
+       overflow: visible;
+   }
+
+   .woman,
+    .shadow{
+    display: none;
+}
+.woman-mobile,
+.shadow-mobile{
+    display: block;
+}
+
+.woman-mobile{
+    position: absolute;
+    top: -100px;
+    left: 20px;
+}
+
+.shadow-mobile{
+    position: absolute;
+    top: -10px;
+    left: 50px;
+}
+   .box{
+       display: none;
+   }
+
+   .faq-title{
+       margin-top: 80px;
+       text-align: unset;
+   }
+
+   .attribution{
+       margin-top: 20px;
+   }
+   .faq-que{
+    margin: 50px 0 20px 0;
+    font-size: 13px;
+   }
+} 
